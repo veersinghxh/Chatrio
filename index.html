@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WebRTC Mobile</title>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND YOUTUBE VIDEO -->
+
+<div class="bg-video">
+
+    <iframe
+        src="https://www.youtube.com/embed/eGQ8nulcuCk?autoplay=1&mute=1&loop=1&playlist=eGQ8nulcuCk&controls=0&showinfo=0&modestbranding=1&rel=0"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">Chatrio</div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn">
+        ☰
+    </label>
+
+    <div class="nav-links">
+        <a href="#">college</a>
+        <a href="#">minor_project</a>
+        <a href="#">Services</a>
+        <a href="#" class="contact-btn">Contact</a>
+    </div>
+
+</nav>
+
+<!-- TITLE -->
+
+<h3 class="title">
+    📱 WebRTC Mobile
+    <span>No Server</span>
+</h3>
+
+<!-- VIDEO CALL -->
+
+<div class="video-container">
+
+    <video id="local" autoplay muted playsinline class="call-video"></video>
+
+    <video id="remote" autoplay playsinline class="call-video"></video>
+
+</div>
+
+<!-- CONTROLS -->
+
+<div class="controls">
+
+    <input id="peerId" placeholder="Enter Remote ID">
+
+    <div class="button-group">
+
+        <button onclick="start()">
+            Start Camera
+        </button>
+
+        <button onclick="callPeer()">
+            Call
+        </button>
+
+    </div>
+
+    <div class="id-text">
+        Your ID:
+        <span id="myId">---</span>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="social-icons">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-twitter"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+    <div class="footer-menu">
+
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Team</a>
+
+    </div>
+
+    <div class="footer-bottom">
+        Copyright © 2025 | Designed By BATPRIME
+    </div>
+
+</footer>
+
+<!-- PEER JS -->
+
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
